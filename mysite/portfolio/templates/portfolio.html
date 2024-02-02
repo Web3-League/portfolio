@@ -1,0 +1,363 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+
+    <div id="header">
+        <div id="container">
+            <div id="logo">
+                &lt;C/&gt;
+                <div id="nom">BorisPeyriguere</div>
+            </div>
+            <div id="navBar">
+                <div id="menu">
+                    <a href="{% url 'home' %}" id="home">Home</a> <!-- Idem pour 'home' -->
+                    <a href="{% url 'blog_index' %}" id="blogs">Blogs</a>
+                    <!-- Remplacer 'blog_index' par le nom de la vue de votre page de blogs -->
+                </div>
+                <div id="search">
+                    <a href="{% url 'search' %}"> <!-- Remplacer 'search' par le nom de votre vue de recherche -->
+                        <div id="icon-search"></div>
+                    </a>
+                </div>
+                <div id="media">
+                    <div id="gap">
+                        <a href="https://www.instagram.com/votre_nom_utilisateur" target="_blank"
+                            id="icon-instagram"></a> <!-- Remplacer par votre URL Instagram -->
+                        <div id="instagram">Instagram</div>
+
+                    </div>
+                    <div id="gap">
+                        <a href="https://discord.com/users/votre_id_utilisateur" target="_blank" id="icon-discord"></a>
+                        <!-- Remplacer par votre lien Discord -->
+                        <div id="discord">Discord</div>
+
+                    </div>
+                    <div id="gap">
+                        <a href="https://github.com/votre_nom_utilisateur" target="_blank" id="icon-github"></a>
+                        <!-- Remplacer par votre URL GitHub -->
+                        <div id="github">Github</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="hero">
+        <div id="container-hero">
+            <div id="background-text">
+                DEVELOPER
+            </div>
+            <div id="content">
+                <div id="left">
+                    <div id="content-card">
+                        <div id="photo-name">
+                            <div id="photo"></div>
+                            <div id="def">
+                                <div id="prenom">Boris</div>
+                                <div id="spe">Full-stack developer</div>
+                            </div>
+                        </div>
+                        <div id="info-card">
+                            <div id="text-card">
+                                <div id="email">
+                                    <div id="icon-mail"></div>
+                                    <div id="text-card">peyriguere.boris@gmail.com</div>
+                                </div>
+                                <div id="location">
+                                    <div id="icon-map-pin"></div>
+                                    <div id="text-card">France</div>
+                                </div>
+                                <div id="freelancer">
+                                    <div id="icon-briefcase"></div>
+                                    <div id="text-card">Full-time / Freelancer</div>
+                                </div>
+                                <div id="website">
+                                    <div id="icon-link"></div>
+                                    <div id="text-card">www.ozweb.com</div>
+                                </div>
+                            </div>
+                            <div id="label-card">
+                                <div id="label">HTML</div>
+                                <div id="label">CSS</div>
+                                <div id="label">JS</div>
+                                <div id="label">PHP</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="button-card">
+                        <div id="button-card-text">Download CV</div>
+                        <div id="icon-download"></div>
+                    </div>
+                </div>
+                <div id="right">
+                    <div id="info">
+                        <div id="title">
+                            <div id="title-text1">Hey</div>
+                            <div id="title-text2">I'm Boris,</div>
+                            <div id="title-text3">Full-stack developer</div>
+                        </div>
+                        <div id="paragraph">
+                            <div id="paragraph-text">I am a full-stack developer with 3 years of experience. I have
+                                a
+                                passion
+                                for web development and love to create for web and mobile devices. I am a fast
+                                learner
+                                and
+                                always looking for new technologies to learn and master.</div>
+
+                            <div id="cta">
+                                <div id="talk-text">Let's Talk</div>
+                                <div id="button-mail">
+                                    <div id="icon-mail-end"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="highlight">
+                        <div id="language">
+                            <div id="number">4</div>
+                            <div id="text-highlight">Programming <div>Languages</div>
+                            </div>
+                        </div>
+                        <div id="tools">
+                            <div id="number">6</div>
+                            <div id="text-highlight">Development <div> Tools</div>
+                            </div>
+                        </div>
+                        <div id="experience">
+                            <div id="number">2</div>
+                            <div id="text-highlight">Years of <div> Experience</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="aboutMe">
+        <div id="module-title">
+            <div id="scroll">
+                <div id="vector"></div>
+                <div id="arrow"></div>
+            </div>
+        </div>
+        <div id="container-aboutMe">
+            <div id="text-aboutMe">
+                <div id="title-aboutMe">About Me</div>
+                <div id="container-paragraph">
+                    <div id="paragraph-aboutMe">I am a full-stack developer with 3 years of experience. I have a
+                        passion
+                        for web development and love to create for web and mobile devices. I am a fast learner and
+                        always
+                        looking for new technologies to learn and master. I have a passion for web development and
+                        love
+                        to
+                        create for web and mobile devices. I am a fast learner and always looking for new
+                        technologies
+                        to
+                        learn and master.</div>
+                </div>
+            </div>
+            <div id="image-aboutMe"></div>
+        </div>
+    </div>
+
+    <div id="skills">
+        <div id="skills-container">
+            <div id="module-title">
+                <div id="scroll">
+                    <div id="vector"></div>
+                    <div id="arrow"></div>
+                </div>
+
+                <div id="container-skills">
+                    <div id="title-skills">Skills</div>
+                    <div id="icon-line"></div>
+                    <div id="paragraph-skills">I am striving to never stop learning and improving</div>
+                </div>
+            </div>
+
+            <div id="container-skills-card">
+                <div id="services">
+
+                    <div id="card">
+                        <div id="icon-monitor">
+                            <div id="monitor"></div>
+                        </div>
+                        <div id="title-card">Web Development</div>
+                        <div id="paragraph-card">HTML·CSS·JS·REACT</div>
+                    </div>
+
+                    <div id="card">
+                        <div id="icon-smartphone">
+                            <div id="smartphone"></div>
+                        </div>
+                        <div id="title-card">App developement</div>
+                        <div id="paragraph-card">iOS·Android</div>
+                    </div>
+
+                </div>
+                <div id="skills-card">
+                    <div id="skills-html">
+                        <div id="icon-html">
+                            <div id="html5"></div>
+                        </div>
+                        <div id="skills-text-html5">HTML</div>
+                    </div>
+                    <div id="skills-css">
+                        <div id="icon-css">
+                            <div id="css3"></div>
+                        </div>
+                        <div id="skills-text-css3">CSS</div>
+                    </div>
+                    <div id="skills-html">
+                        <div id="icon-js">
+                            <div id="node-js"></div>
+                        </div>
+                        <div id="skills-text-js">JS</div>
+                    </div>
+                    <div id="skills-html">
+                        <div id="icon-react">
+                            <div id="react"></div>
+                        </div>
+                        <div id="skills-text-react">REACT</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="works">
+        <div id="skills-container">
+            <div id="module-title">
+                <div id="scroll">
+                    <div id="vector"></div>
+                    <div id="arrow"></div>
+                </div>
+
+                <div id="container-skills">
+                    <div id="title-skills">Works</div>
+                    <div id="icon-line"></div>
+                    <div id="paragraph-skills">I had the pleasure of working with these awesome projects</div>
+                </div>
+            </div>
+        </div>
+        <div id="container-works">
+            <div id="arrow-left">
+                <div id="chevron-left"></div>
+            </div>
+            <div id="dual-screen">
+                <div id="screen-left"></div>
+                <div id="screen-right"></div>
+            </div>
+            <div id="arrow-right">
+                <div id="chevron-right"></div>
+            </div>
+        </div>
+    </div>
+    <div id="blogs-pages">
+        <div id="skills-container">
+            <div id="module-title">
+                <div id="scroll">
+                    <div id="vector"></div>
+                    <div id="arrow"></div>
+                </div>
+
+                <div id="container-skills">
+                    <div id="title-skills">Blogs</div>
+                    <div id="icon-line"></div>
+                    <div id="paragraph-skills">My thoughts on technology and business, welcome to subscribe</div>
+                </div>
+            </div>
+        </div>
+        <div id="line"></div>
+        <div id="container-blogs">
+            <div id="content-blog">
+                <div id="img-blogs"></div>
+                <div id="text-blogs">
+                    <div id="title-blogs">
+                        What does it take to become a web developer?
+                    </div>
+                    <div id="paragraph-blogs">
+                        Web development, also known as website development, encompasses a variety of tasks and
+                        processes
+                        involved in creating websites for the internet…
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="line"></div>
+    </div>
+    <div id="contact">
+        <div id="container-contact">
+            <div id="module-title">
+                <div id="scroll">
+                    <div id="vector"></div>
+                    <div id="arrow"></div>
+                </div>
+
+                <div id="container-skills">
+                    <div id="title-skills">Contact</div>
+                    <div id="icon-line"></div>
+                    <div id="paragraph-skills">I’m currently available for freelance work</div>
+                </div>
+            </div>
+            <div id="container-form">
+                <div id="title-form">Send Me A Message</div>
+                <form id="form">
+                    <div id="input">
+                        <div id="name">
+                            <div id="user">Your name *</div>
+                            <input id="input-tab0" type="text" placeholder="Name">
+                        </div>
+                        <div id="form-email-container">
+                            <div id="form-email">Your email *</div>
+                            <input id="input-tab1" type="text" placeholder="Email">
+                        </div>
+                    </div>
+                    <div id="message">
+                        <div id="message">Your message *</div>
+                        <input id="input-message" type="text" placeholder="Message">
+                    </div>
+                    <div id="button-form">
+                        <button id="button-form-text" type="submit">Send Message<div id="icon-send"></div>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+            {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                <li{% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+                    {% endfor %}
+            </ul>
+            {% endif %}
+            </form>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="container-footer">
+            <div id="text-footer">Copyright © 2024. All rights reserved.</div>
+            <div id="text-footer">Made with ❤️ by Boris</div>
+            <div id="icon-footer">
+                <div id="icon-instagram"></div>
+                <div id="icon-discord"></div>
+                <div id="icon-github"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
